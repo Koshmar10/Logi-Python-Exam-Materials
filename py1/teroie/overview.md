@@ -286,28 +286,3 @@ sum([1,2,3])  # 6
 | `min()`, `max()`, `sum()`          | funcții matematice rapide      |
 
 ---
-
-## 🔠 Exemple de aplicații logice
-
-- **Jocuri:** ghicirea unui număr, hangman, tic-tac-toe
-- **Probleme matematice:** CMMDC, CMMMC, număr prim, sumă, produs
-- **Manipulare de text:** înlocuire, numărare vocale, codificare/decriptare
-- **Liste:** sortare, filtrare, găsire valori comune, eliminare duplicate
-
----
-
-## ✅ Sfaturi pentru examen
-
-- Indentarea corectă este obligatorie (`if`, `for`, `while` trebuie să aibă spații corecte)
-- Convertește tipurile când combini text și numere (`str()` / `int()`)
-- Repetă conceptele cheie: `if/elif/else`, `for`, `while`, `list.append()`, `range()`, `input()`
-- Înelege diferența între:
-
-  - `append` – adaugă un singur element
-  - `extend` – adaugă mai multe elemente
-
-- Exersează mini-programe:
-
-  - Căutarea celui mai mare număr
-  - Numărarea aparițiilor unui element
-  - Ghicirea unui număr secret
