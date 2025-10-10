@@ -73,7 +73,7 @@ ex_7()
 
 
 # EX 8 – While loop
-# Folosește un while pentru a număra invers de la 5 la 1 și apoi afișează "Start!"
+# Folosește un while pentru a număra cifrele unui numar data de la tastature și apoi afișează numarul
 def ex_8():
     # TODO: inițializează un contor și scade până la 0
     pass
