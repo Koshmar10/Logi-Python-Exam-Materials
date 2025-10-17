@@ -1,8 +1,4 @@
-# 🐍 Python Cheatsheet – Concepte noi (Overview)
-
-> Conține doar noțiunile **noi** față de primul fișier, explicate scurt și clar, cu exemple simple inspirate din lecțiile tale (Lesson_01 – Lesson_16).
-
----
+# 🐍 Python Cheatsheet – Modul 2
 
 ## 1️⃣ Funcții (`def`)
 
@@ -23,9 +19,9 @@ print(aduna(3, 4))
 
 **Explicație:**
 
-* `def` definește funcția.
-* `return` trimite rezultatul înapoi.
-* Poți apela funcția oricând după definire.
+- `def` definește funcția.
+- `return` trimite rezultatul înapoi.
+- Poți apela funcția oricând după definire.
 
 ---
 
@@ -46,8 +42,8 @@ print(factorial(5))  # 120
 
 **Explicație:**
 
-* Condiția `if n <= 1` este cazul de oprire.
-* Recursia continuă până când `n` devine 1.
+- Condiția `if n <= 1` este cazul de oprire.
+- Recursia continuă până când `n` devine 1.
 
 ---
 
@@ -69,8 +65,8 @@ print(pare)  # [0, 2, 4, 6, 8]
 
 **Explicație:**
 
-* `[x**2 for x in range(1, 6)]` = “pune în listă pătratul fiecărui `x` între 1 și 5”.
-* Poți adăuga condiții după `if`.
+- `[x**2 for x in range(1, 6)]` = “pune în listă pătratul fiecărui `x` între 1 și 5”.
+- Poți adăuga condiții după `if`.
 
 ---
 
@@ -95,8 +91,8 @@ for rand in matrice:
 
 **Explicație:**
 
-* `matrice[1][2]` = elementul din rândul 2, coloana 3.
-* Poți parcurge matricea cu bucle imbricate.
+- `matrice[1][2]` = elementul din rândul 2, coloana 3.
+- Poți parcurge matricea cu bucle imbricate.
 
 ---
 
@@ -117,8 +113,8 @@ print(culori[0])  # roșu
 
 **Explicație:**
 
-* Se folosesc pentru date care nu trebuie schimbate.
-* Poți “despacheta” valorile ușor: `x, y = coordonate`.
+- Se folosesc pentru date care nu trebuie schimbate.
+- Poți “despacheta” valorile ușor: `x, y = coordonate`.
 
 ---
 
@@ -141,8 +137,8 @@ with open("exemplu.txt", "r", encoding="utf-8") as f:
 
 **Explicație:**
 
-* `with open()` deschide fișierul și îl închide automat.
-* Moduri: `r` (citire), `w` (scriere), `a` (adăugare).
+- `with open()` deschide fișierul și îl închide automat.
+- Moduri: `r` (citire), `w` (scriere), `a` (adăugare).
 
 ---
 
@@ -165,18 +161,16 @@ print(a >> 1)  # SHIFT RIGHT -> 2
 
 **Explicație:**
 
-* `&` = ambele 1 → 1
-* `|` = oricare 1 → 1
-* `^` = doar unul 1 → 1
-* `<<` și `>>` deplasează biții la stânga/dreapta.
+- `&` = ambele 1 → 1
+- `|` = oricare 1 → 1
+- `^` = doar unul 1 → 1
+- `<<` și `>>` deplasează biții la stânga/dreapta.
 
 ---
 
 ## 8️⃣ Module Python
 
 **Ce sunt:** fișiere care conțin cod reutilizabil. Se folosesc cu `import`.
-
-### Exemple din lecțiile tale
 
 #### `math` – calcule matematice
 
@@ -214,6 +208,58 @@ import os
 os.remove("fisier.txt")
 ```
 
+## Module folosite și funcțiile importante
+
+#### math – calcule matematice
+
+- math.sqrt(x) – rădăcina pătrată.
+- math.pi, math.e – constante utile.
+- math.factorial(n) – calculează factorialul.
+
+- random – generare aleatorie
+- random.randint(a, b) – număr întreg între a și b.
+- random.choice(lista) – alege un element aleator.
+- random.shuffle(lista) – amestecă elementele din listă.
+
+#### turtle – desen grafic
+
+_turtle.Turtle() – creează “stiloul”.
+_.forward(px), .right(deg) – mișcare și rotație.
+*.color(), .begin_fill(), .end_fill() – culoare și umplere.
+*turtle.exitonclick() – închide fereastra la click.
+
+#### os – lucrul cu fișiere și directoare
+
+- os.path.join(fisier1, fisier2) – creează o cale completă.
+- os.remove(fisier) – șterge fișierul dat.
+
+#### pygame – dezvoltare jocuri 2D
+
+*pygame.display.set_mode() – fereastra jocului.
+*pygame.image.load() – încarcă imagini.
+*pygame.Rect() – creează obiecte dreptunghiulare.
+*pygame.key.get_pressed() – verifică taste apăsate.
+\*pygame.mixer.Sound() – redă efecte sonore.
+
+#### pandas – manipulare de date (CSV)
+
+_pd.read_csv('fisier.csv') – citește fișier CSV.
+_.head() – afișează primele rânduri.
+_.drop() – elimină coloane.
+_.fillna() – înlocuiește valori lipsă.
+
+#### matplotlib.pyplot – grafice
+
+*plt.pie() – grafic circular.
+*plt.barh() – grafic cu bare orizontale.
+\*plt.show() – afișează graficul.
+
+#### numpy – calcule numerice
+
+*np.mean(lista) – media valorilor.
+*np.max(lista) – valoarea maximă.
+*np.array() – creează un tablou numeric.
+
 ---
 
 ## 9️⃣ Exemplu complet – recapitulare
@@ -234,23 +280,22 @@ print("Media:", calculeaza_media(numere))
 
 **Ce combină:**
 
-* Funcții proprii (`def`)
-* Modul extern (`random`)
-* Comprehensiune de listă
-* Calcul numeric cu funcții integrate (`sum`, `len`)
+- Funcții proprii (`def`)
+- Modul extern (`random`)
+- Comprehensiune de listă
+- Calcul numeric cu funcții integrate (`sum`, `len`)
 
 ---
 
 ✅ **Rezumat final:**
 
-* **Funcții** → organizează codul.
-* **Recursie** → funcție care se apelează singură.
-* **Comprehensiuni** → creare rapidă de liste.
-* **Matrici** → liste în liste.
-* **Tuple** → colecții fixe.
-* **Fișiere** → citire/scriere date externe.
-* **Operații pe biți** → lucrul cu reprezentări binare.
-* **Module** → cod reutilizabil importat cu `import`.
+- **Funcții** → organizează codul.
+- **Recursie** → funcție care se apelează singură.
+- **Comprehensiuni** → creare rapidă de liste.
+- **Matrici** → liste în liste.
+- **Tuple** → colecții fixe.
+- **Fișiere** → citire/scriere date externe.
+- **Operații pe biți** → lucrul cu reprezentări binare.
+- **Module** → cod reutilizabil importat cu `import`.
 
 ---
-
